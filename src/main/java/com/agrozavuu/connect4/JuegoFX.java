@@ -1,4 +1,4 @@
-package com.aetxabao.connect4;
+package com.agrozavuu.connect4;
 
 import javafx.application.Application;
 import javafx.event.Event;
@@ -12,8 +12,8 @@ import javafx.stage.Stage;
 
 import java.util.Objects;
 
-import static com.aetxabao.connect4.SalidaFX.CANVAS_WIDTH;
-import static com.aetxabao.connect4.SalidaFX.CANVAS_HEIGHT;
+import static com.agrozavuu.connect4.SalidaFX.CANVAS_WIDTH;
+import static com.agrozavuu.connect4.SalidaFX.CANVAS_HEIGHT;
 
 public class JuegoFX extends Application {
     private static boolean jugando;

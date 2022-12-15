@@ -3,6 +3,6 @@ module com.aetxabao.connect4 {
     requires javafx.fxml;
 
 
-    opens com.aetxabao.connect4 to javafx.fxml;
-    exports com.aetxabao.connect4;
+    opens com.agrozavuu.connect4 to javafx.fxml;
+    exports com.agrozavuu.connect4;
 }

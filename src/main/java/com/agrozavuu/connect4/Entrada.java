@@ -1,4 +1,4 @@
-package com.aetxabao.connect4;
+package com.agrozavuu.connect4;
 
 import java.io.BufferedReader;
 import java.io.IOException;
