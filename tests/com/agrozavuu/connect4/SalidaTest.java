@@ -1,6 +1,6 @@
-package com.aetxabao.connect4;
+package com.agrozavuu.connect4;
 
-import static com.aetxabao.connect4.Tablero.*;
+import static com.agrozavuu.connect4.Tablero.*;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

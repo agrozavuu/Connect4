@@ -1,9 +1,12 @@
 package com.agrozavuu.connect4;
 
+import java.util.Random;
+
 /**
  * @author Nombre Apellido
  */
 public class Tablero {
+    private static final Random RANDOM = new Random();
 
     public final static char O = 'O';
     public final static char X = 'X';
@@ -59,25 +62,53 @@ public class Tablero {
     }
 
     public void iniciaTurno() {
-        //TODO: iniciaTurno
+        Random rand = new Random();
+
+        int turno = rand.nextInt(2);
+
+        if (turno == 0) {
+            System.out.println("X");
+        } else {
+            System.out.println("O");
+        }
     }
 
     public void cambiaTurno() {
-        //TODO: cambiaTurno
+        if (turno == 'X'){
+            turno += 'O';
+        }else if (turno == 'O'){
+            turno += 'X';
+        }
     }
 
     public boolean estaColumnaLibre(int columna) {
-        //TODO: estaColumnaLibre
+        for (int i = 0; i < m.length; i++) {
+            if (m[i][columna] == ' '){
+                return true;
+            }
+        }
         return false;
     }
 
     public void inserta(char ficha, int columna) {
-        //TODO: insertar
+        for (int i = 0; i < m.length; i++) {
+            if (m[i][columna] == ' ') {
+                m[i][columna] = ficha;
+                contador++;
+                return;
+            }
+        }
     }
 
     public boolean estaLleno() {
-        //TODO: estaLleno
-        return contador == alto*ancho;
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[i].length; j++) {
+                if (m[i][j] == ' ') {
+                    return false;
+                }
+            }
+        }
+        return true;
     }
 
     public boolean gana(char jugador) {
