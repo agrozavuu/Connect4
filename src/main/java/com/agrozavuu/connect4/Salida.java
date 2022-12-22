@@ -43,12 +43,26 @@ public class Salida {
         System.out.println("                                   ");
         char[] letras = {'A','B','C','D','E','F'};
 
-
-
-
-
-
-
+//        for (int i = h - 1; i >= 0; i--) {
+//            System.out.print(letras[i]);
+//            System.out.printf("%3s", "|");
+//            for (int j = 0; j <= w-1; j++) {
+//                System.out.printf("%2s", matriz[j][i]);
+//                System.out.printf("%2s", "|");
+//            }
+//            System.out.printf("%3s", letras[i]);
+//            System.out.println();
+//        }
+        for (int i = h-1; i >= 0; i--) {
+            System.out.print(letras[i]);
+            System.out.printf("%3s", "|");
+            for (int j = 0; j <= w-1; j++) {
+                System.out.printf("%2s", matriz[j][i]);
+                System.out.printf("%2s", "|");
+            }
+            System.out.printf("%3s", letras[i]);
+            System.out.println();
+        }
 
         System.out.println("   -----------------------------   ");
         System.out.println("   | 1 | 2 | 3 | 4 | 5 | 6 | 7 |   ");
